@@ -1,4 +1,4 @@
-const url = "http://localhost:3000/api/posts";
+const url = `${window.location.origin}/api/posts`;
 
 export const getPosts = async () => {
   const res = await fetch(url);

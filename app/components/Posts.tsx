@@ -5,7 +5,7 @@ import { useEffect } from "react";
 const Posts = () => {
   useEffect(() => {
     const getData = async () => {
-      const res = await fetch("http://localhost:3000/api/posts");
+      const res = await fetch(`${window.location.origin}/api/posts`);
       const data = await res.json();
 
       console.log({ data });
