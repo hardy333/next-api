@@ -2,9 +2,17 @@ import { addPost, getPosts } from "@/app/lib/data";
 import { NextRequest, NextResponse } from "next/server";
 
 export function GET(request: NextRequest) {
+  console.log("GET api route -- GET");
+
   const posts = getPosts();
 
-  console.log("From Posts");
+  return NextResponse.json(posts);
+}
+
+export function PUT(request: NextRequest) {
+  console.log("GET api route -- PUT");
+
+  const posts = getPosts();
 
   return NextResponse.json(posts);
 }

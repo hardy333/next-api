@@ -32,11 +32,16 @@ export const getPosts = () => {
 };
 
 export const deletPost = (id: string) => {
+  console.log(posts, id);
   posts = posts.filter((post) => post.id != id);
 };
 
 export const addPost = (post: Post) => {
+  console.log("Post", post);
+
   posts.push(post);
+
+  console.log(posts);
   return posts;
 };
 
