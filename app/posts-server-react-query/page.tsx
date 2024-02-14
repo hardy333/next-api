@@ -11,6 +11,8 @@ const url =
     ? process.env.DEVELOPMENT_LOCATION_ORIGIN
     : process.env.PRODUCTION_LOCATION_ORIGIN;
 
+export const revalidate = 0;
+
 const PostsPageWithReactQuery = async () => {
   const queryClient = new QueryClient();
 
